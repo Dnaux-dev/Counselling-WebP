@@ -149,7 +149,7 @@ p:last-child {
 }
 
 .sticky-img{
-  width: 150px;
+  width: 100px;
 }
 
 img {
@@ -3181,7 +3181,7 @@ table p {
   left: 0;
   top: 0;
   width: 100%;
-  padding: 15px 0px;
+  padding: 10px 0px;
   background: #fff;
   opacity: 0;
   visibility: hidden;
