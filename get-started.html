@@ -29,6 +29,11 @@
             display: grid;
             min-height: 100vh;
         }
+        input[type=radio],
+        input[type=checkbox] {
+            accent-color: #008000;
+        }
+  
 
         /* Global Stylings */
         label {
@@ -298,8 +303,7 @@
         <div class="offcanvas-head mb-3">
           <div class="header-top-offcanvas">
             <p>
-              <i class="icofont-google-map"></i> <span>ADDRESS:</span> 568
-              Elizaberth Str, London, UK
+              <a href="/get-started.html" class="book-now-btn">Get Started</a>
             </p>
           </div>
         </div>
@@ -413,11 +417,11 @@
         <div class="form-step form-step-active">
             <h4>What is your gender identity?</h4>
             <div class="input-group">
-                <input type="radio" id="male" name="gender" value="male">
+                <input type="radio" id="male Green" name="gender" value="male">
                 <label for="male">Male</label>
             </div>
             <div class="input-group">
-                <input type="radio" id="female" name="gender" value="female">
+                <input type="radio" id="female Green" name="gender" value="female">
                 <label for="female">Female</label>
             </div>
             <div class="">
@@ -444,39 +448,39 @@
         <div class="form-step">
             <h4>What are the issues you are facing?</h4>
             <div class="input-group">
-                <input type="checkbox" id="stress" name="stress" value="stress">
+                <input type="checkbox" id="stress Green" name="stress" value="stress">
                 <label for="stress"> Stress or Anxiety</label>
             </div>
             <div class="input-group">
-                <input type="checkbox" id="depression" name="depression" value="depression">
+                <input type="checkbox" id="depression Green" name="depression" value="depression">
                 <label for="depression"> Depression</label>
             </div>
             <div class="input-group">
-                <input type="checkbox" id="school" name="school" value="school">
+                <input type="checkbox" id="school Green" name="school" value="school">
                 <label for="school"> School challenges</label>
             </div>
             <div class="input-group">
-                <input type="checkbox" id="add" name="add" value="add">
+                <input type="checkbox" id="add Green" name="add" value="add">
                 <label for="add"> ADHD/ADD</label>
             </div>
             <div class="input-group">
-                <input type="checkbox" id="addiction" name="addiction" value="addiction">
+                <input type="checkbox" id="addiction Green" name="addiction" value="addiction">
                 <label for="addiction"> Addiction</label>
             </div>
             <div class="input-group">
-                <input type="checkbox" id="trauma" name="trauma" value="trauma">
+                <input type="checkbox" id="trauma Green" name="trauma" value="trauma">
                 <label for="trauma"> Trauma or Abuse</label>
             </div>
             <div class="input-group">
-                <input type="checkbox" id="loss" name="loss" value="loss">
+                <input type="checkbox" id="loss Green" name="loss" value="loss">
                 <label for="loss"> Loss of Loved ones</label>
             </div>
             <div class="input-group">
-                <input type="checkbox" id="anger" name="anger" value="anger">
+                <input type="checkbox" id="anger Green" name="anger" value="anger">
                 <label for="vehicle1"> Anger Issues</label>
             </div>
             <div class="input-group">
-                <input type="checkbox" id="fears" name="fears" value="fears">
+                <input type="checkbox" id="fears Green" name="fears" value="fears">
                 <label for="fears">Fears or Phobias</label>
             </div>
             <div class="btns-group">
@@ -487,16 +491,16 @@
         <div class="form-step">
             <h4>Have you ever been in a therapy?</h4>
             <div class="input-group">
-                <input type="radio" id="never" name="never" value="never">
-                <label for="never">Never</label>
+                <input type="radio" id="never" name="therapy" value="never">
+                <label for="therapy">Never</label>
             </div>
             <div class="input-group">
-                <input type="radio" id="brief" name="brief" value="brief">
-                <label for="brief">Briefly</label>
+                <input type="radio" id="brief" name="therapy" value="brief">
+                <label for="therapy">Briefly</label>
             </div>
             <div class="input-group">
-                <input type="radio" id="few" name="few" value="few">
-                <label for="few">For a few sessions</label>
+                <input type="radio" id="few" name="therapy" value="few">
+                <label for="therapy">For a few sessions</label>
             </div>
             <div class="btns-group">
                 <a href="#" class="btn btn-prev">Previous</a>
@@ -506,16 +510,16 @@
         <div class="form-step">
             <h2>How would you rate your relationship with your parent?</h2>
             <div class="input-group">
-                <input type="radio" id="never" name="never" value="never">
-                <label for="never">Poor</label>
+                <input type="radio" id="never" name="rating" value="never">
+                <label for="rating">Poor</label>
             </div>
             <div class="input-group">
-                <input type="radio" id="brief" name="brief" value="brief">
-                <label for="brief">Fair</label>
+                <input type="radio" id="brief" name="rating" value="brief">
+                <label for="rating">Fair</label>
             </div>
             <div class="input-group">
-                <input type="radio" id="few" name="few" value="few">
-                <label for="few">Good</label>
+                <input type="radio" id="few" name="rating" value="few">
+                <label for="rating">Good</label>
             </div>
             <div class="btns-group">
                 <a href="#" class="btn btn-prev">Previous</a>
