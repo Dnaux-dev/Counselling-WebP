@@ -2920,9 +2920,12 @@ table p {
 [ 04. Header CSS ]
 
 */
-.header {
+.header{
   background: #008000;
 }
+
+/* Rest of your existing CSS */
+
 
 .header-top {
   padding-top: 15px;
@@ -3551,6 +3554,7 @@ body.offcanvas-open {
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
