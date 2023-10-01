@@ -69,7 +69,8 @@
 body {
   color: #707070;
   font-size: 0.875rem;
-  font-family: "Inter", sans-serif;
+  /* font-family: "Inter", sans-serif; */
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   letter-spacing: .25px;
   line-height: 1.71429;
@@ -82,7 +83,8 @@ body {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #000;
-  font-family: "Inter", sans-serif;
+  /* font-family: "Inter", sans-serif; */
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: 10px;
