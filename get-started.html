@@ -49,6 +49,15 @@
             border-radius: 0.25rem;
         }
 
+        .type-2{
+          display: flex;
+          flex-direction: column;
+        }
+
+        .type-2 input{
+          width: 100%;
+        }
+
         .submit {
             width: 100%;
         }
@@ -785,9 +794,29 @@
             </select>
             <div class="btns-group">
                 <a href="#" class="btn btn-prev">Previous</a>
-                <input type="submit" value="Submit" class="btn submit" />
+                <a href="#" class="btn btn-next">Next</a>
+                
             </div>
         </div>
+        <div class="form-step form-step-active">
+          <!-- <h4>What is your gender identity?</h4> -->
+          <div class="input-group type-2">
+              <input type="text" id="first-name Green" name="name" placeholder="First name" required>
+              
+          </div>
+          <div class="input-group type-2">
+              <input type="text" id="last-name Green" name="name" placeholder="Last name" required>   
+          </div>
+          <div class="input-group type-2">
+            <input type="password" id="password Green" name="password" placeholder="Create password" required>   
+          </div>
+          <div class="input-group type-2">
+            <input type="password" id="confirm-password Green" name="name" placeholder="Confirm password" required>   
+          </div>
+          <div class="">
+              <input type="submit" value="Submit" class="btn submit" />
+          </div>
+      </div>
     </form>
     <footer class="footer-area">   
         <div class="footer-bottom">

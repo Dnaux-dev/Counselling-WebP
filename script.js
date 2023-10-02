@@ -3,6 +3,8 @@ const nextBtns = document.querySelectorAll(".btn-next");
 const progress = document.getElementById("progress");
 const formSteps = document.querySelectorAll(".form-step");
 const progressSteps = document.querySelectorAll(".progress-step");
+const passwordStepNum = 1; 
+const confirmPasswordStepNum = 2;
 
 let formStepsNum = 0;
 
@@ -48,9 +50,7 @@ function updateProgressbar() {
     ((progressActive.length - 1) / (progressSteps.length - 1)) * 100 + "%";
 }
 
-// Validation function for each form step
 function validateFormStep(step) {
-  // Add your validation logic for each step here
   if (step === 0) {
     const selectedGender = document.querySelector('input[name="gender"]:checked');
     if (!selectedGender) {
@@ -64,8 +64,6 @@ function validateFormStep(step) {
       return false;
     }
   } else if (step === 2) {
-    // Add validation for the third step (checkboxes)
-    // Modify this according to your validation logic
     const checkedCount = document.querySelectorAll('input[type="checkbox"]:checked').length;
     if (checkedCount === 0) {
       alert("Please select at least one issue.");
@@ -89,7 +87,32 @@ function validateFormStep(step) {
       alert("Please select your country.");
       return false;
     }
+  }else if (step === 6) {
+    const firstName = document.getElementById('first-name').value;
+    const lastName = document.getElementById('last-name').value;
+    
+    if (!firstName || !lastName) {
+      alert("Please enter both first name and last name.");
+      return false;
+    }
+  } else if (step === passwordStepNum) {
+    const password = document.getElementById('password').value;
+    
+    if (!password) {
+      alert("Please enter a password.");
+      return false;
+    }
+  } else if (step === confirmPasswordStepNum) {
+    const confirmPassword = document.getElementById('confirm-password').value;
+    const password = document.getElementById('password').value;
+    
+    if (confirmPassword !== password) {
+      alert("Passwords do not match.");
+      return false;
+    }
   }
 
-  return true; // Proceed to the next step if validation is successful
+  return true; 
 }
+
+
