@@ -101,6 +101,7 @@ a {
 a:hover, a:active, a:focus {
   box-shadow: none;
   outline: none;
+  color: #008000;
   text-decoration: none;
 }
 
@@ -461,8 +462,8 @@ table p {
 }
 
 .btn-theme.btn-white:hover {
-  background-color: #000;
-  border-color: #000;
+  background-color: #008000  ;
+  border-color: #008000;
   color: #fff;
 }
 
