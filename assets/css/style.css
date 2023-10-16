@@ -259,7 +259,7 @@ table p {
 }
 
 .section-title .title span {
-  color: #034903;
+  color: #008000;
   font-weight: 700;
 }
 
@@ -415,9 +415,9 @@ table p {
 /*-------- Button Style Css --------*/
 .btn-theme {
   background-color: #fff;
-  border-color: #034903;
+  border-color: #008000;
   border-radius: 0;
-  color: #034903;
+  color: #008000;
   display: inline-block;
   font-weight: 400;
   font-size: 14px;
@@ -750,7 +750,7 @@ table p {
 }
 
 .page-title-area .page-title-content .bread-crumbs span.active {
-  color: #568701;
+  color: #008000;
 }
 
 .page-title-area .page-title-content .bread-crumbs .breadcrumb-sep {
@@ -1881,15 +1881,15 @@ table p {
 }
 
 .bgcolor-theme2 {
-  background-color: #303744 !important;
+  background-color: #008000 !important;
 }
 
 .bgcolor-theme3 {
-  background-color: #669900 !important;
+  background-color: #008000 !important;
 }
 
 .bgcolor-theme4 {
-  background-color: #f53400 !important;
+  background-color: #008000 !important;
 }
 
 .text-theme-color {
