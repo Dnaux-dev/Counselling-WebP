@@ -37,7 +37,7 @@
 
         /* Global Stylings */
         label {
-            display: block;
+            display: flex;
             margin-left: 20px !important;
         }
 
@@ -141,7 +141,7 @@
 
         /* Form */
         .form {
-            width: clamp(320px, 30%, 430px);
+            width: clamp(390px, 50%, 450px);
             margin: 50px auto;
             border: 1px solid #ccc;
             border-radius: 0.35rem;
@@ -426,19 +426,140 @@
 
         <!-- Steps -->
         <div class="form-step form-step-active">
-            <h4>What is your gender identity?</h4>
+          <h4>How do you identify?</h4>
+          <div class="input-group">
+              <input type="radio" id="male Green" name="gender" value="male">
+              <label for="male">Male</label>
+          </div>
+          <div class="input-group">
+              <input type="radio" id="female Green" name="gender" value="female">
+              <label for="female">Female</label>
+          </div>
+          <div class="input-group">
+              <input type="radio" id="female Green" name="gender" value="lesbian">
+              <label for="female">Lesbian</label>
+          </div>
+          <div class="input-group">
+              <input type="radio" id="female Green" name="gender" value="gay">
+              <label for="female">Gay</label>
+          </div>
+          <div class="input-group">
+              <input type="radio" id="female Green" name="gender" value="bi/pa">
+              <label for="female">Bi or Pan </label>
+          </div>
+          <div class="input-group">
+              <input type="radio" id="female Green" name="gender" value="custom">
+              <label for="female">Prefer not to say</label>
+          </div>
+          <div class="">
+            <a href="#" class="btn btn-next width-50 ml-auto">Next</a>
+          </div> 
+        </div>
+        <div class="form-step">
+          <h4>What led you to consider therapy today?</h4>
+          <div class="input-group">
+              <input type="checkbox" id="depression Green" name="depression" value="depression">
+              <label for="stress"> I've been feeling depressed </label>
+          </div>
+          <div class="input-group">
+              <input type="checkbox" id="anxious/overwhemled Green" name="anxious/overwhemled" value="anxious/overwhemled">
+              <label for="depression"> I feel anxious or overwhemled</label>
+          </div>
+          <div class="input-group">
+              <input type="checkbox" id="grieving Green" name="grieving" value="grieving">
+              <label for="school"> I am grieving</label>
+          </div>
+          <div class="input-group">
+              <input type="checkbox" id="self-confidence Green" name="self-confidence" value="self-confidence">
+              <label for="add"> I want to gain self-confidence</label>
+          </div>
+          <div class="input-group">
+              <input type="checkbox" id="addiction Green" name="addiction" value="I want to improve myself but I don't know where to start from">
+              <label for="addiction"> I want to improve myself but I don't know where to start from</label>
+          </div>
+          <div class="input-group">
+              <input type="checkbox" id="trauma Green" name="trauma" value="I experience trauma">
+              <label for="trauma"> I experience trauma</label>
+          </div>
+          <div class="input-group">
+              <input type="checkbox" id="loss Green" name="loss" value="loss">
+              <label for="loss"> Loss of Loved ones</label>
+          </div>
+          <div class="input-group">
+              <input type="checkbox" id="anger Green" name="anger" value="I can't find purpose and meaning in my life">
+              <label for="vehicle1"> I can't find purpose and meaning in my life</label>
+          </div>
+          <div class="input-group">
+              <input type="checkbox" id="fears Green" name="fears" value="fears">
+              <label for="fears">Fears or Phobias</label>
+          </div>
+          <div class="btns-group">
+              <a href="#" class="btn btn-prev">Previous</a>
+              <a href="#" class="btn btn-next">Next</a>
+          </div>
+      </div>
+        <div class="form-step">
+          <h4>Do you consider yourself to be spiritual?</h4>
+          <div class="input-group">
+              <input type="radio" id="Yes" name="spiritual" value="Yes">
+              <label for="relationship">Yes</label>
+          </div>
+          <div class="input-group">
+              <input type="radio" id="No" name="spiritual" value="No">
+              <label for="relationship">No</label>
+          </div>
+          <div class="btns-group">
+              <a href="#" class="btn btn-prev">Previous</a>
+              <a href="#" class="btn btn-next">Next</a>
+          </div>
+      </div>
+        <div class="form-step">
+          <h4>Which religion do you identify with?</h4>
+          <div class="input-group">
+              <input type="radio" id="Christianity" name="religion" value="Christianity">
+              <label for="relationship">Christianity</label>
+          </div>
+          <div class="input-group">
+              <input type="radio" id="Islam" name="religion" value="Islam">
+              <label for="relationship">Islam</label>
+          </div>
+          <div class="input-group">
+              <input type="radio" id="Judaism" name="religion" value="Judaism">
+              <label for="relationship">Judaism</label>
+          </div>
+          <div class="input-group">
+              <input type="radio" id="Others" name="religion" value="Others">
+              <label for="relationship">Others</label>
+          </div>
+          <div class="btns-group">
+              <a href="#" class="btn btn-prev">Previous</a>
+              <a href="#" class="btn btn-next">Next</a>
+          </div>
+      </div>
+        <div class="form-step">
+            <h4>What is your relationship status?</h4>
             <div class="input-group">
-                <input type="radio" id="male Green" name="gender" value="male">
-                <label for="male">Male</label>
+                <input type="radio" id="Single" name="relationship" value="Single">
+                <label for="relationship">Single</label>
             </div>
             <div class="input-group">
-                <input type="radio" id="female Green" name="gender" value="female">
-                <label for="female">Female</label>
+                <input type="radio" id="In a relationship" name="relationship" value="In a relationship">
+                <label for="relationship">In a relationship</label>
             </div>
-            <div class="">
-                <a href="#" class="btn btn-next width-50 ml-auto">Next</a>
+            <div class="input-group">
+                <input type="radio" id="Married" name="relationship" value="Married">
+                <label for="relationship">Married</label>
+            </div>
+            <div class="input-group">
+                <input type="radio" id="Divorced" name="relationship" value="Divorced">
+                <label for="relationship">Divorced</label>
+            </div>
+            <div class="btns-group">
+                <a href="#" class="btn btn-prev">Previous</a>
+                <a href="#" class="btn btn-next">Next</a>
             </div>
         </div>
+        
         <div class="form-step">
             <h4>How old are you?</h4>
             <select name="age" id="age">
