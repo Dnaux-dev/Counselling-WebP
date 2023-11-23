@@ -57,37 +57,73 @@ function validateFormStep(step) {
       alert("Please select your gender.");
       return false;
     }
-  } else if (step === 1) {
+  }
+  else if(step===1) {
+    const checkedTherapy = document.querySelectorAll('input[type="checkbox"]:checked').length;
+    if (checkedTherapy === 0) {
+      alert("Please why do you consider therapy?");
+      return false;
+    }
+  }
+
+  else if (step === 2) {
+      const selectedSpirituality = document.querySelector('input[name="spiritual"]:checked');
+      if (!selectedSpirituality) {
+        alert("Please select.");
+        return false;
+      }
+    } 
+  else if (step === 3) {
+    const selectedReligion = document.querySelector('input[name="religion"]:checked');
+    if (!selectedReligion) {
+      alert("Please select Religion");
+      return false;
+    }
+  }
+
+  else if (step === 4) {
+    const relationshipSta = document.querySelector('input[name="relationship"]:checked');
+    if (!relationshipSta) {
+      alert("Please indicate relationship status");
+      return false;
+    }
+  }
+   else if (step === 5) {
     const selectedAge = document.getElementById('age').value;
     if (selectedAge === 'select age') {
       alert("Please select your age.");
       return false;
     }
-  } else if (step === 2) {
-    const checkedCount = document.querySelectorAll('input[type="checkbox"]:checked').length;
-    if (checkedCount === 0) {
+  } 
+  else if (step === 6) {
+    const IssueCount = document.querySelector('input[name="issue"]:checked');
+    if (!IssueCount) {
       alert("Please select at least one issue.");
       return false;
     }
-  } else if (step === 3) {
-    const selectedTherapy = document.querySelector('input[name="therapy"]:checked');
-    if (!selectedTherapy) {
+  } 
+  else if (step === 7) {
+    const therapyCount = document.querySelector('input[name="therapy"]:checked');
+    if (!therapyCount) {
       alert("Please select if you've been in therapy.");
       return false;
     }
-  } else if (step === 4) {
+  } 
+  else if (step === 8) {
     const selectedRating = document.querySelector('input[name="rating"]:checked');
     if (!selectedRating) {
       alert("Please rate your relationship with your parent.");
       return false;
     }
-  } else if (step === 5) {
+  } 
+  else if (step === 9) {
     const selectedCountry = document.getElementById('country').value;
     if (selectedCountry === 'select country') {
       alert("Please select your country.");
       return false;
     }
-  }else if (step === 6) {
+  }
+  else if (step === 10) {
     const firstName = document.getElementById('first-name').value;
     const lastName = document.getElementById('last-name').value;
     
@@ -95,14 +131,16 @@ function validateFormStep(step) {
       alert("Please enter both first name and last name.");
       return false;
     }
-  } else if (step === passwordStepNum) {
+  }
+   else if (step === passwordStepNum) {
     const password = document.getElementById('password').value;
     
     if (!password) {
       alert("Please enter a password.");
       return false;
     }
-  } else if (step === confirmPasswordStepNum) {
+  } 
+  else if (step === confirmPasswordStepNum) {
     const confirmPassword = document.getElementById('confirm-password').value;
     const password = document.getElementById('password').value;
     
